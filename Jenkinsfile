@@ -19,8 +19,7 @@ pipeline {
         }
          stage('Build2') {
               when{
-                  not {
-                 branch "master"
+                  branch "master"
                   }
              }
             steps {
@@ -30,7 +29,7 @@ pipeline {
          stage('Build3') {
              when {
                  not{
-                branch "fecth_branch"
+                branch "new"
                  }
              }
             steps {
