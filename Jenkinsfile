@@ -28,8 +28,7 @@ pipeline {
         }
          stage('Build3') {
              when {
-                 not{
-                branch "new"
+              branch "master"
                  }
              }
             steps {
